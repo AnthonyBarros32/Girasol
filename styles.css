@@ -3,23 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media (max-width: 768px) {
 .mensaje {
     position: absolute;
-    top: 250px !important; /* Ajusta la posición vertical */
+    top: 230px; /* Ajusta la posición para acercar el texto más al girasol */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px; /* Tamaño de fuente ajustado */
     font-family: Arial, sans-serif;
     color: #333;
-    width: 80%; /* Asegúrate de que tenga un ancho adecuado */
-    max-width: 600px; /* Limita el ancho en pantallas grandes */
-    z-index: 1; /* Asegúrate de que el texto quede por encima de otros elementos */
+    width: 80%;
+    max-width: 600px;
+    z-index: 2; /* Asegura que el texto esté sobre el girasol */
 }
+
+@media (max-width: 768px) {
+    .mensaje {
+        font-size: 12px; /* Reducir el tamaño de la letra en pantallas pequeñas */
+        top: 180px; /* Ajustar más cerca del girasol para móviles */
+        padding: 8px;
+    }
 }
 
 /* Otros estilos */
