@@ -5,18 +5,19 @@
 }
 .mensaje {
     position: absolute;
-    top: 20px; /* Ajusta la posición vertical según lo necesites */
+    top: 20px; /* Ajusta la posición vertical */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
-    font-size: 16px; /* Tamaño de letra reducido */
+    font-size: 16px;
     font-family: Arial, sans-serif;
     color: #333;
-    width: 80%;
-    max-width: 600px;
+    width: 80%; /* Asegúrate de que tenga un ancho adecuado */
+    max-width: 600px; /* Limita el ancho en pantallas grandes */
+    z-index: 1; /* Asegúrate de que el texto quede por encima de otros elementos */
 }
 
 /* Otros estilos */
