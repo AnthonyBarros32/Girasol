@@ -5,13 +5,18 @@
 }
 .mensaje {
     position: absolute;
-    top: 250px; /* Ajusta este valor para que esté más cerca de la flor */
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+    top: 20px; /* Ajusta la posición vertical según lo necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    width: 100%;
-    z-index: 10;
+    font-size: 16px; /* Tamaño de letra reducido */
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 80%;
+    max-width: 600px;
 }
 
 /* Otros estilos */
