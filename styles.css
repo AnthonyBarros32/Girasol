@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
 .mensaje {
     position: absolute;
     top: 250px !important; /* Ajusta la posición vertical */
@@ -18,6 +19,7 @@
     width: 80%; /* Asegúrate de que tenga un ancho adecuado */
     max-width: 600px; /* Limita el ancho en pantallas grandes */
     z-index: 1; /* Asegúrate de que el texto quede por encima de otros elementos */
+}
 }
 
 /* Otros estilos */
