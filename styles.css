@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mensaje {
+    position: absolute;
+    top: 380px; /* Ajusta este valor para que esté más cerca de la flor */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Otros estilos */
+body {
+    background-color: #87CEEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Para que el mensaje esté encima */
+}
+
+/* Contenedor principal */
+.contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tallo {
+    width: 20px;
+    height: 160px;
+    background-color: green;
+    position: absolute;
+    top: 160px;
+    border-radius: 10px;
+    transform-origin: bottom center;
+
+    /* Z-index bajo para que quede detrás */
+    z-index: -1;
+}
+
+/* Hojas */
+.hoja {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.hoja-izquierda {
+    left: -40px;
+    top: 170px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+.hoja-derecha {
+    left: 0;
+    top: 170px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+/* Flor */
+.flor {
+    position: absolute;
+    top: 50px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: brown;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+
+}
+
+/* Pétalos */
+.petalos {
+    position: absolute;
+    width: 150px;
+    height: 140px;
+}
+
+/* Animación de latido más notoria */
+@keyframes latido {
+    0% { transform: scale(1) rotate(var(--rotacion)); }
+    50% { transform: scale(1.2) rotate(var(--rotacion)); } /* Aumentamos más la escala */
+    100% { transform: scale(1) rotate(var(--rotacion)); }
+}
+
+.petalo {
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    transform-origin: center;
+    animation: latido 1.5s ease-in-out infinite; /* Aplicamos la animación de latido */
+}
+
