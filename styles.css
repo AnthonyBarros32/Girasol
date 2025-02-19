@@ -5,7 +5,7 @@
 }
 .mensaje {
     position: absolute;
-    top: 380px; /* Ajusta este valor para que esté más cerca de la flor */
+    top: 300px; /* Ajusta este valor para que esté más cerca de la flor */
     font-size: 24px;
     font-weight: bold;
     color: #333;
@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative; /* Para que el mensaje esté encima */
+    margin: 0;
 }
 
 /* Contenedor principal */
@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(-80px); 
 }
 
 
