@@ -5,7 +5,7 @@
 }
 .mensaje {
     position: absolute;
-    top: 300px; /* Ajusta este valor para que esté más cerca de la flor */
+    top: 250px; /* Ajusta este valor para que esté más cerca de la flor */
     font-size: 24px;
     font-weight: bold;
     color: #333;
